@@ -42,6 +42,7 @@ header, footer {
   text-align: center;        /* Centrer tekst */
   padding: 2rem;             /* Luft omkring */
   margin: 0;                 /* Fjern bund-margin */
+  background-color: lightblue;
 }
 
 .video-container {
