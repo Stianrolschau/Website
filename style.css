@@ -13,12 +13,17 @@ header, footer {
     margin-bottom: 2rem;
     border-radius: 0.5rem;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
 
 .header-image {
-    width: 100%;
-    max-width: 400px; /* Begrænser hvor stort det bliver */
-    height: auto;
+    width: auto;        /* Bevarer billedets naturlige bredde */
+    max-width: 200px;   /* Maksimal bredde på desktop */
+    height: auto;       /* Bevarer proportioner */
     display: block;
-    margin: 0 auto;
+    margin: 0 auto 1rem auto;  /* Centrerer billedet med luft under */
+}
+
+@media (max-width: 600px) {
+    .header-image {
+        max-width: 150px;  /* Mindre på mobil */
+    }
 }
