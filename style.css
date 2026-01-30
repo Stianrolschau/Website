@@ -1,4 +1,5 @@
-body, html {
+/* --- Body og baggrund --- */
+html, body {
     margin: 0;
     padding: 0;
     height: 100%;
@@ -6,18 +7,19 @@ body, html {
 
 body {
     font-family: "Avenir", Courier, sans-serif;
-    margin: 0;
     padding: 2rem;
     background-color: #f9d2d7;
     color: #222;
+
+    /* Grain effekt */
     background-image: 
         radial-gradient(circle, rgba(255,255,255,0.05) 1px, transparent 1px),
         radial-gradient(circle, rgba(255,255,255,0.05) 1px, transparent 1px);
-
-    background-size: 10px 10px; /* tæthed af “noise” */
-    background-position: 0 0, 5px 5px; /* forskyd overlap for variation */
+    background-size: 10px 10px;
+    background-position: 0 0, 5px 5px;
 }
 
+/* --- Header og footer --- */
 header, footer {
     text-align: center;
     padding: 1rem;
@@ -25,43 +27,45 @@ header, footer {
 }
 
 .header-image {
-    width: auto;        /* Bevarer billedets naturlige bredde */
-    max-width: 400px;   /* Maksimal bredde på desktop */
-    height: auto;       /* Bevarer proportioner */
+    width: auto;
+    max-width: 400px;
+    height: auto;
     display: block;
-    margin: 0 auto 1rem auto;  /* Centrerer billedet med luft under */
+    margin: 0 auto 1rem auto;
 }
 
+/* --- Video sektion --- */
 .video-section {
-  display: flex;             /* Flex-container */
-  flex-direction: column;    /* Stack h2 + video lodret */
-  align-items: center;       /* Centrer vandret */
-  justify-content: center;   /* Centrer lodret */
-  text-align: center;        /* Centrer tekst */
-  padding: 2rem;             /* Luft omkring */
-  margin: 0;                 /* Fjern bund-margin */
+    display: flex;
+    flex-direction: column;   /* Titel over video */
+    align-items: center;      /* Centrer horisontalt */
+    justify-content: center;  /* Centrer vertikalt */
+    text-align: center;
+    padding: 2rem;
+    margin: 0;
 }
 
-/* Kun fyld højde på større skærme, ikke mobil */
+/* Desktop: min-height for layout */
 @media (min-width: 768px) {
-  .video-section {
-    min-height: 60vh;
-  }
+    .video-section {
+        min-height: 60vh;
+    }
 }
 
+/* --- Video container for 16:9 --- */
 .video-container {
-  position: relative;
-  width: 100%;
-  max-width: 560px;          /* Maksimal bredde */
-  padding-bottom: 56.25%;    /* 16:9 ratio */
-  height: 100%;
-  margin-top: 0rem;          /* Luft mellem titel og video */
+    position: relative;
+    width: 100%;
+    max-width: 560px;       /* Maks bredde på desktop */
+    padding-bottom: 56.25%; /* 16:9 ratio */
+    height: 0;
+    margin-top: 1rem;
 }
 
 .video-container iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
