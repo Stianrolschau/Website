@@ -45,7 +45,7 @@ header, footer {
 /* Kun fyld højde på større skærme, ikke mobil */
 @media (min-width: 768px) {
   .video-section {
-    min-height: auto;
+    min-height: 60vh;
   }
 }
 
