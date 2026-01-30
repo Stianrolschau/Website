@@ -45,9 +45,9 @@ header, footer {
 /* Kun fyld højde på større skærme, ikke mobil */
 @media (min-width: 768px) {
   .video-section {
-    min-height: 60vh; /* mindre end 100vh, holder det responsive */
-       }
-    }
+    min-height: auto;
+  }
+}
 
 .video-container {
   position: relative;
