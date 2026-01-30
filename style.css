@@ -26,20 +26,25 @@ header, footer {
     .header-image {
         max-width: 150px;  /* Mindre på mobil */
     }
-}
 
 .video-section {
-  text-align: center;
-  margin-bottom: 2rem;
+  display: flex;             /* Flex-container */
+  flex-direction: column;    /* Stack h2 + video lodret */
+  align-items: center;       /* Centrer vandret */
+  justify-content: center;   /* Centrer lodret */
+  min-height: 100vh;         /* Fylder hele højden af viewport */
+  text-align: center;        /* Centrer tekst */
+  padding: 2rem;             /* Luft omkring */
+  margin: 0;                 /* Fjern bund-margin */
 }
 
 .video-container {
   position: relative;
   width: 100%;
-  max-width: 560px;   /* Maksimal bredde på desktop */
-  margin: 0 auto;
-  padding-bottom: 56.25%;  /* 16:9 ratio */
+  max-width: 560px;          /* Maksimal bredde */
+  padding-bottom: 56.25%;    /* 16:9 ratio */
   height: 0;
+  margin-top: 1rem;          /* Luft mellem titel og video */
 }
 
 .video-container iframe {
