@@ -37,11 +37,16 @@ header, footer {
   flex-direction: column;    /* Stack h2 + video lodret */
   align-items: center;       /* Centrer vandret */
   justify-content: center;   /* Centrer lodret */
-  min-height: 100vh;         /* Fylder hele højden af viewport */
   text-align: center;        /* Centrer tekst */
   padding: 2rem;             /* Luft omkring */
   margin: 0;                 /* Fjern bund-margin */
 }
+
+/* Kun fyld højde på større skærme, ikke mobil */
+@media (min-width: 768px) {
+  .video-section {
+    min-height: 60vh; /* mindre end 100vh, holder det responsive */
+       }
 
 .video-container {
   position: relative;
