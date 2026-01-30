@@ -19,6 +19,13 @@ body {
     background-position: 0 0, 5px 5px;
 }
 
+.work-title {
+    margin-top: 2rem;   /* giver mere luft over titlen */
+    font-size: 1.1rem;
+    letter-spacing: 0.15em;
+    font-weight: 600;
+}
+
 /* --- Header og footer --- */
 header, footer {
     text-align: center;
