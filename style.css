@@ -47,6 +47,7 @@ header, footer {
   .video-section {
     min-height: 60vh; /* mindre end 100vh, holder det responsive */
        }
+    }
 
 .video-container {
   position: relative;
