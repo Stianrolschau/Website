@@ -14,3 +14,11 @@ header, footer {
     border-radius: 0.5rem;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
+
+.header-image {
+    width: 100%;
+    max-width: 400px; /* Begrænser hvor stort det bliver */
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
