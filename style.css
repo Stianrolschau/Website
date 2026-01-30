@@ -16,7 +16,7 @@ header, footer {
 
 .header-image {
     width: auto;        /* Bevarer billedets naturlige bredde */
-    max-width: 250px;   /* Maksimal bredde på desktop */
+    max-width: 300px;   /* Maksimal bredde på desktop */
     height: auto;       /* Bevarer proportioner */
     display: block;
     margin: 0 auto 1rem auto;  /* Centrerer billedet med luft under */
