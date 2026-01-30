@@ -8,9 +8,15 @@ body {
     font-family: "Avenir", Courier, sans-serif;
     margin: 0;
     padding: 2rem;
-    background-color: #f5f5f5;
+    background-color: #ff99cc;
     color: #222;
     pading: 0;
+    background-image: 
+        radial-gradient(circle, rgba(255,255,255,0.05) 1px, transparent 1px),
+        radial-gradient(circle, rgba(255,255,255,0.05) 1px, transparent 1px);
+
+    background-size: 10px 10px; /* tæthed af “noise” */
+    background-position: 0 0, 5px 5px; /* forskyd overlap for variation */
 }
 
 header, footer {
