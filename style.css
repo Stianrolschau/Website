@@ -10,7 +10,6 @@ body {
     padding: 2rem;
     background-color: #f9d2d7;
     color: #222;
-    pading: 0;
     background-image: 
         radial-gradient(circle, rgba(255,255,255,0.05) 1px, transparent 1px),
         radial-gradient(circle, rgba(255,255,255,0.05) 1px, transparent 1px);
@@ -42,7 +41,6 @@ header, footer {
   text-align: center;        /* Centrer tekst */
   padding: 2rem;             /* Luft omkring */
   margin: 0;                 /* Fjern bund-margin */
-  background-color: none;
 }
 
 .video-container {
