@@ -52,7 +52,7 @@ header, footer {
     width: 100%;
     max-width: 960px;         /* Maks bredde desktop */
     aspect-ratio: 16 / 9;     /* Perfekt 16:9 */
-    margin-top: 1rem;
+    margin-top: 0rem;
 }
 
 .video-wrapper iframe {
