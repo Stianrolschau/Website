@@ -54,7 +54,7 @@ header, footer {
   width: 100%;
   max-width: 560px;          /* Maksimal bredde */
   padding-bottom: 56.25%;    /* 16:9 ratio */
-  height: 0;
+  height: 100%;
   margin-top: 0rem;          /* Luft mellem titel og video */
 }
 
