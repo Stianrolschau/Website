@@ -10,15 +10,13 @@ body {
     padding: 2rem;
     background-color: #f5f5f5;
     color: #222;
+    pading: 0;
 }
 
 header, footer {
     text-align: center;
     padding: 1rem;
-    background-color: #fff;
     margin-bottom: 2rem;
-    border-radius: 0.5rem;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 .header-image {
@@ -38,7 +36,7 @@ header, footer {
   text-align: center;        /* Centrer tekst */
   padding: 2rem;             /* Luft omkring */
   margin: 0;                 /* Fjern bund-margin */
-  background-color: lightblue;
+  background-color: none;
 }
 
 .video-container {
