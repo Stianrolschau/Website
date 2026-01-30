@@ -39,33 +39,34 @@ header, footer {
     display: flex;
     flex-direction: column;   /* Titel over video */
     align-items: center;      /* Centrer horisontalt */
-    justify-content: center;  /* Centrer vertikalt */
+    justify-content: flex-start;
     text-align: center;
     padding: 2rem;
     margin: 0;
+    width: 100%;
 }
 
-/* Desktop: min-height for layout */
-@media (min-width: 768px) {
-    .video-section {
-        min-height: 60vh;
-    }
-}
-
-/* --- Video container for 16:9 --- */
-.video-container {
+/* Video container med moderne 16:9 metode */
+.video-wrapper {
     position: relative;
     width: 100%;
-    max-width: 560px;       /* Maks bredde på desktop */
-    padding-bottom: 56.25%; /* 16:9 ratio */
-    height: 0;
+    max-width: 960px;         /* Maks bredde desktop */
+    aspect-ratio: 16 / 9;     /* Perfekt 16:9 */
     margin-top: 1rem;
 }
 
-.video-container iframe {
+.video-wrapper iframe {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
+    border: 0;
+}
+
+/* Valgfri: min-height på desktop for layout */
+@media (min-width: 768px) {
+    .video-section {
+        min-height: 60vh;
+    }
 }
