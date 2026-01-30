@@ -27,3 +27,25 @@ header, footer {
         max-width: 150px;  /* Mindre på mobil */
     }
 }
+
+.video-section {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  max-width: 560px;   /* Maksimal bredde på desktop */
+  margin: 0 auto;
+  padding-bottom: 56.25%;  /* 16:9 ratio */
+  height: 0;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
