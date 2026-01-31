@@ -50,6 +50,17 @@ body::after {
     opacity: 0.4;
 }
 
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background-image: url("images/film-grain.png");
+    background-repeat: repeat;
+    opacity: 0.35;           /* justér grain-styrke */
+    pointer-events: none;
+    z-index: 9999;
+}
+
 .work-title {
     margin-top: 2rem;   /* giver mere luft over titlen */
     font-size: 1.1rem;
