@@ -57,7 +57,7 @@ header, footer {
 .video-wrapper {
     position: relative;
     width: 100%;
-    max-width: 960px;         /* Maks bredde desktop */
+    max-width: 700px;         /* Maks bredde desktop */
     aspect-ratio: 16 / 9;     /* Perfekt 16:9 */
     margin-top: 0rem;
     margin-bottom: 2rem;
