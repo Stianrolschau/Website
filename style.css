@@ -19,33 +19,6 @@ background-size: 8px 8px;
 background-position: 0 0, 4px 4px;
 }
 
-body::after {
-    content: "";
-    position: fixed;
-    inset: 0;
-    pointer-events: none;
-    background-image:
-        repeating-linear-gradient(
-            0deg,
-            rgba(255,255,255,0.02),
-            rgba(255,255,255,0.02) 1px,
-            transparent 1px,
-            transparent 2px
-        );
-    opacity: 0.4;
-}
-
-body::before {
-    content: "";
-    position: fixed;
-    inset: 0;
-    background-image: url("images/film-grain.png");
-    background-repeat: repeat;
-    opacity: 0.35;           /* justér grain-styrke */
-    pointer-events: none;
-    z-index: 9999;
-}
-
 .work-title {
     margin-top: 2rem;   /* giver mere luft over titlen */
     font-size: 1.1rem;
