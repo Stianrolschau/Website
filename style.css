@@ -34,6 +34,22 @@ background-position:
     6px 17px;
 }
 
+body::after {
+    content: "";
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    background-image:
+        repeating-linear-gradient(
+            0deg,
+            rgba(255,255,255,0.02),
+            rgba(255,255,255,0.02) 1px,
+            transparent 1px,
+            transparent 2px
+        );
+    opacity: 0.4;
+}
+
 .work-title {
     margin-top: 2rem;   /* giver mere luft over titlen */
     font-size: 1.1rem;
