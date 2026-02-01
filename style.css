@@ -107,4 +107,170 @@ header, footer {
 }
 
 /* === STILLS === */
+/* --- Body og baggrund --- */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  font-family: Arial, Courier, sans-serif;
+  font-size: 0.85rem;
+  background-color: #f9d2d7;
+  color: #222;
+
+  /* Grain effekt */
+  background-image:
+    radial-gradient(circle, rgba(255,255,255,0.08) 1px, transparent 1px),
+    radial-gradient(circle, rgba(0,0,0,0.04) 1px, transparent 1px);
+  background-size: 8px 8px;
+  background-position: 0 0, 4px 4px;
+}
+
+/* --- Header --- */
+header, footer {
+  text-align: center;
+  padding: 1rem;
+}
+
+.header-image {
+  max-width: 400px;
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto 1rem;
+}
+
+/* --- Video sektion --- */
+.video-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  width: 100%;
+}
+
+.video-wrapper {
+  width: 100%;
+  max-width: 700px;
+  aspect-ratio: 16 / 9;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* --- Film Work --- */
+.film-work {
+  max-width: 60%;
+  margin: 0 auto;
+}
+
+/* === HOVEDLAYOUT === */
+.film-item {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 3rem;
+  align-items: flex-start;
+}
+
+/* === VENSTRE KOLONNE (POSTER) === */
+.film-left {
+  flex: 0 1 420px;     /* ← KRITISK */
+  max-width: 420px;
+}
+
+.film-poster {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* === HØJRE KOLONNE === */
+.film-details {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+/* Tekst */
+.film-info {
+  line-height: 1.3;
+}
+
+.film-info h3 {
+  margin: 0 0 0.4rem 0;
+}
+
+.film-info p {
+  margin: 0.2rem 0;
+}
+
+/* === STILLS === */
 .film-stills {
+  display: flex;
+  flex-direction: column;   /* ALTID under hinanden */
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.film-stills img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: 0.25rem;
+}
+
+/* === MOBIL === */
+@media (max-width: 768px) {
+
+  .film-work {
+    max-width: 100%;
+    padding: 1rem;
+  }
+
+  .film-item {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .film-left {
+    max-width: 70%;
+  }
+
+  .film-details {
+    text-align: center;
+  }
+}
+
+
+/* === MOBIL === */
+@media (max-width: 768px) {
+
+  .film-work {
+    max-width: 100%;
+    padding: 1rem;
+  }
+
+  .film-item {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .film-left {
+    max-width: 70%;
+  }
+
+  .film-details {
+    text-align: center;
+  }
+}
