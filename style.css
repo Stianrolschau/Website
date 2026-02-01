@@ -71,8 +71,7 @@ header, footer {
   margin-bottom: 3rem;
   align-items: flex-start;
   flex-wrap: wrap; /* gør layout responsivt på små skærme */
-
-    /* NYT: Centrer hele rækken */
+  width: 100%;               /* fylder hele .film-work */
   justify-content: center;
 }
 
