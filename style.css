@@ -71,13 +71,13 @@ header, footer {
   margin-bottom: 3rem;
   align-items: flex-start;
   justify-content: center; /* centrer venstre+højre kolonne */
-  flex-wrap: wrap; /* gør layout responsivt på små skærme */
+  flex-wrap: nowrap; /* gør layout responsivt på små skærme */
   width: 100%;
 }
 
 /* === Venstre kolonne (poster + note + links) === */
 .film-left {
-  flex: 0 0 auto;     /* kun så bred som nødvendig */
+  flex: 0 1 40%;     /* kun så bred som nødvendig */
   max-width: 450px;
   display: flex;
   flex-direction: column;
@@ -98,8 +98,8 @@ header, footer {
 
 /* === Højre kolonne (tekst + stills) === */
 .film-details {
-  flex: 0 1 auto; /* fylder kun det nødvendige */
-  min-width: 0;
+  flex: 1 1 50%; /* fylder kun det nødvendige */
+  min-width: 250px;
   display: flex;
   flex-direction: column;
   text-align: left;
@@ -144,6 +144,7 @@ header, footer {
   .film-item {
     flex-direction: column;  /* plakat over tekst/stills */
     align-items: center;
+    flex-wrap: wrap;
   }
 
   .film-left {
