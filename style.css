@@ -149,8 +149,8 @@ header, footer {
 }
 
 .film-stills {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr); /* 2 stills pr række */
+  display: flex;
+  flex-direction: column;  /* ← én still pr. linje */
   gap: 0.75rem;
   margin-top: 1rem;
   width: 100%;
