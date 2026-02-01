@@ -117,8 +117,8 @@ header, footer {
 
 .poster-note {
   font-style: italic;
-  margin-top: 0.5rem;
-  text-align: center; /* eller left hvis du vil */
+  margin-top: 1.5rem;
+  text-align: left; /* eller left hvis du vil */
 }
 
 /* Højre kolonne: tekst + stills */
