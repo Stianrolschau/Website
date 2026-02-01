@@ -129,7 +129,7 @@ header, footer {
 }
 
 .film-stills img {
-  width: 32%;          /* 3 stills på én linje på desktop */
+  width: calc(50% - 0.25rem);          
   height: auto;
   object-fit: cover;
   border-radius: 0.25rem;
