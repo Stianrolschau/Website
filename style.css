@@ -79,6 +79,8 @@ header, footer {
     }
 .film-work {
   padding: 2rem;
+max-width: 60%;      /* begrænser bredden til 60% af skærmen */
+  margin: 0 auto;       /* centrerer sektionen horisontalt */
 }
 
 .film-work h2 {
@@ -135,7 +137,12 @@ header, footer {
     align-items: center;
     text-align: center;
   }
-
+@media (max-width: 768px) {
+  .film-work {
+    max-width: 100%;
+    padding: 1rem;
+  }
+    
   .film-poster {
     width: 60%;
     margin-bottom: 1rem;
