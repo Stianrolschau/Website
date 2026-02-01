@@ -96,10 +96,7 @@ header, footer {
   margin-bottom: 3rem;
   align-items: flex-start;
   flex-wrap: wrap; /* gør layout responsive */
-  background-color: rgba(255,255,255,0.8);
-  border-radius: 0.5rem;
   padding: 1rem;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 /* Plakat til venstre */
