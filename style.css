@@ -77,36 +77,38 @@ header, footer {
     .video-section {
         min-height: 60vh;
     }
-}
 .film-work {
   padding: 2rem;
-  text-align: center;
 }
 
-.film-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem;
-  margin-top: 2rem;
+.film-work h2 {
+  text-align: center;
+  margin-bottom: 2rem;
 }
 
 .film-item {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 3rem;
+  flex-wrap: wrap; /* gør det responsive på små skærme */
+  align-items: flex-start;
   background-color: rgba(255,255,255,0.8);
   border-radius: 0.5rem;
-  overflow: hidden;
+  padding: 1rem;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 .film-poster {
-  width: 100%;
+  width: 250px; /* fast bredde til plakat */
   height: auto;
+  border-radius: 0.5rem;
+  flex-shrink: 0;
 }
 
-.film-info {
-  padding: 1rem;
+.film-details {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 .film-info h3 {
@@ -116,12 +118,34 @@ header, footer {
 .film-stills {
   display: flex;
   gap: 0.5rem;
-  padding: 1rem;
+  margin-top: 1rem;
 }
 
 .film-stills img {
-  width: 50%;
+  width: 50%; /* 2 stills ved siden af hinanden */
   height: auto;
   object-fit: cover;
   border-radius: 0.25rem;
+}
+
+/* --- Responsivt --- */
+@media (max-width: 768px) {
+  .film-item {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .film-poster {
+    width: 60%;
+    margin-bottom: 1rem;
+  }
+
+  .film-stills {
+    justify-content: center;
+  }
+
+  .film-stills img {
+    width: 40%;
+  }
 }
