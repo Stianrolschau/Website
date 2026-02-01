@@ -61,7 +61,7 @@ header, footer {
 /* --- Film Work Sektion --- */
 .film-work {
   max-width: 60%;
-  margin: 0 auto;
+  margin: 0 auto; /* centrer hele sektionen */
 }
 
 /* === Film Item (Hovedlayout) === */
@@ -70,22 +70,18 @@ header, footer {
   gap: 2rem;
   margin-bottom: 3rem;
   align-items: flex-start;
+  justify-content: center; /* centrer venstre+højre kolonne */
   flex-wrap: wrap; /* gør layout responsivt på små skærme */
-  width: 100%;               /* fylder hele .film-work */
-  justify-content: center;
-}
-
-.film-wrapper {
-  display: flex;
-  gap: 2rem;
-  flex-wrap: nowrap; /* <-- nøgle: ingen wrap på desktop */
-  align-items: flex-start;
+  width: 100%;
 }
 
 /* === Venstre kolonne (poster + note + links) === */
 .film-left {
-  flex: 0 1 450px;     /* kritisk for skalerbarhed */
+  flex: 0 0 auto;     /* kun så bred som nødvendig */
   max-width: 450px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* centrer poster + note + links */
 }
 
 .film-poster {
@@ -96,13 +92,13 @@ header, footer {
 
 .poster-note {
   font-style: italic;
-  margin-top: 2rem;
+  margin-top: 1.5rem;
   text-align: center;
 }
 
 /* === Højre kolonne (tekst + stills) === */
 .film-details {
-  flex: 1;
+  flex: 0 1 auto; /* fylder kun det nødvendige */
   min-width: 0;
   display: flex;
   flex-direction: column;
@@ -128,7 +124,7 @@ header, footer {
   flex-direction: column;   /* altid under hinanden */
   gap: 0.75rem;
   margin-top: 1rem;
-  width: 80%;
+  max-width: 90%; /* mindre end tekstkolonnen, så de ikke fylder fuld bredde */
 }
 
 .film-stills img {
@@ -140,16 +136,9 @@ header, footer {
 
 /* === Mobil layout === */
 @media (max-width: 768px) {
-
   .film-work {
     max-width: 100%;
     padding: 1rem;
-  }
-
-    .film-wrapper {
-    flex-direction: column; /* plakat over tekst/stills på mobil */
-    flex-wrap: wrap;        /* tillad wrap på mobil */
-    align-items: center;
   }
 
   .film-item {
@@ -165,6 +154,7 @@ header, footer {
 
   .film-details {
     text-align: center;
+    width: 100%;
   }
 
   .film-stills {
