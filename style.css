@@ -6,7 +6,7 @@ html, body {
 }
 
 body {
-    font-family: "Georgia", Courier, sans-serif;
+    font-family: "Arial", Courier, sans-serif;
     padding: 0rem;
     background-color: #f9d2d7;
     color: #222;
@@ -118,6 +118,17 @@ header, footer {
 /* Film information */
 .film-info h3 {
   margin-top: 0;
+}
+    .film-info {
+  line-height: 1.3;
+}
+
+.film-info h3 {
+  margin-bottom: 0.4rem;
+}
+
+.film-info p {
+  margin: 0.2rem 0;
 }
 
 /* Stills under teksten */
