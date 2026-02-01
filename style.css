@@ -80,7 +80,7 @@ header, footer {
 /* --- Film Work Sektion --- */
 .film-work {
   padding: 2rem;
-  max-width: 50%;       /* Sektionen fylder maks 60% af skærmen */
+  max-width: 60%;       /* Sektionen fylder maks 60% af skærmen */
   margin: 0 auto;       /* Centrerer horisontalt */
 }
 
