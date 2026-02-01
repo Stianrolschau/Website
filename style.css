@@ -119,7 +119,6 @@ header, footer {
   font-style: italic;
   margin-top: 1.5rem;
   text-align: left; /* eller left hvis du vil */
-    width: 100%;
 }
 
 /* Højre kolonne: tekst + stills */
