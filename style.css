@@ -81,116 +81,69 @@ header, footer {
 /* --- Film Work Sektion --- */
 .film-work {
   padding: 0rem;
-  max-width: 60%;       /* Sektionen fylder maks 60% af skærmen */
-  margin: 0 auto;       /* Centrerer horisontalt */
+  max-width: 60%;
+  margin: 0 auto;
 }
 
-.film-work h2 {
-  text-align: center;
-  margin-bottom: 2rem;
-}
-
-/* --- Hovedlayout: Plakat til venstre, tekst + stills til højre --- */
 .film-item {
   display: flex;
   gap: 2rem;
   margin-bottom: 3rem;
   align-items: flex-start;
-  flex-wrap: wrap; /* gør layout responsive */
   padding: 1rem;
-  min-width: 0;
 }
 
-/* Plakat til venstre */
+/* Poster */
 .film-poster {
   width: 100%;
   max-width: 420px;
   height: auto;
-  object-fit: contain;
   display: block;
-  flex-shrink: 1; /* ← VIGTIG */
 }
 
-.film-left {
-  width: 100%;
-  max-width: 420px;   /* matcher poster */
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  min-width: 0; /* ← MEGET VIGTIG */
-}
-
-
-.poster-note {
-  font-style: italic;
-  margin-top: 1.5rem;
-  text-align: left; /* eller left hvis du vil */
-}
-
-/* Højre kolonne: tekst + stills */
+/* Højre kolonne */
 .film-details {
   flex: 1;
+  min-width: 0;
   display: flex;
   flex-direction: column;
-  text-align: left;   /* Venstrestillet tekst på desktop */
+  text-align: left;
 }
 
-/* Film information */
-.film-info h3 {
-  margin-top: 0;
-}
-    .film-info {
-  line-height: 1.3;
-}
-
-.film-info h3 {
-  margin-bottom: 0.4rem;
-}
-
-.film-info p {
-  margin: 0.2rem 0;
-}
-
+/* Stills */
 .film-stills {
   display: flex;
-  flex-direction: column;  /* ← én still pr. linje */
+  flex-direction: column;
   gap: 0.75rem;
   margin-top: 1rem;
-  width: 80%;
+  width: 100%;
 }
 
 .film-stills img {
   width: 100%;
-  aspect-ratio: 16 / 9;  /* ENS format */
-  object-fit: cover;     /* beskær ens */
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
   border-radius: 0.25rem;
 }
 
-/* --- Responsivt layout --- */
+/* --- Mobil --- */
 @media (max-width: 768px) {
 
   .film-work {
-    max-width: 100%;   /* Fylder hele skærmen på mobil */
+    max-width: 100%;
     padding: 1rem;
   }
 
   .film-item {
-    flex-direction: column;  /* Plakat over tekst/stills på mobil */
+    flex-direction: column;
     align-items: center;
-    text-align: center;
   }
-
-  .film-details {
-    text-align: center;      /* Venstrestillet ændres til centreret på mobil */
-  }
-
-@media (max-width: 768px) {
 
   .film-poster {
     max-width: 70%;
   }
 
-  .film-stills {
-    grid-template-columns: 1fr; /* 1 still per linje */
+  .film-details {
+    text-align: center;
   }
 }
