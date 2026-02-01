@@ -98,16 +98,17 @@ header, footer {
   align-items: flex-start;
   flex-wrap: wrap; /* gør layout responsive */
   padding: 1rem;
+  min-width: 0;
 }
 
 /* Plakat til venstre */
 .film-poster {
   width: 100%;
-  max-width: 420px;     /* ENS for alle postere */
+  max-width: 420px;
   height: auto;
   object-fit: contain;
-  border-radius: 0.5rem;
   display: block;
+  flex-shrink: 1; /* ← VIGTIG */
 }
 
 .film-left {
@@ -116,7 +117,9 @@ header, footer {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  min-width: 0; /* ← MEGET VIGTIG */
 }
+
 
 .poster-note {
   font-style: italic;
