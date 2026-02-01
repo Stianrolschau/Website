@@ -102,17 +102,20 @@ header, footer {
 
 /* Plakat til venstre */
 .film-poster {
-  width: 450px;
+  width: 100%;
+  max-width: 420px;     /* ENS for alle postere */
   height: auto;
+  object-fit: contain;
   border-radius: 0.5rem;
-  flex-shrink: 0;
+  display: block;
 }
 
-    .film-left {
+.film-left {
+  width: 100%;
+  max-width: 420px;   /* matcher poster */
   display: flex;
-  flex-direction: column; /* plakat over tekst */
-  align-items: center;    /* centrer plakat og tekst */
-  max-width: 500px;       /* samme bredde som plakaten */
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .poster-note {
@@ -145,18 +148,18 @@ header, footer {
   margin: 0.2rem 0;
 }
 
-/* Stills under teksten */
 .film-stills {
-  display: flex;
-  flex-direction: column;   /* ét still pr. linje */
-  gap: 0.75rem;             /* luft mellem stills */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 stills pr række */
+  gap: 0.75rem;
   margin-top: 1rem;
+  width: 100%;
 }
 
 .film-stills img {
-  width: 80%;              /* samme bredde som tekstkolonnen */
-  height: auto;
-  object-fit: cover;
+  width: 100%;
+  aspect-ratio: 16 / 9;  /* ENS format */
+  object-fit: cover;     /* beskær ens */
   border-radius: 0.25rem;
 }
 
@@ -178,17 +181,13 @@ header, footer {
     text-align: center;      /* Venstrestillet ændres til centreret på mobil */
   }
 
-  .film-poster {
-    width: 60%;              /* Plakat mindre på mobil */
-    margin-bottom: 1rem;
-  }
+@media (max-width: 768px) {
 
-  .film-stills img {
-    width: 40%;              /* To stills per række på mobil */
-    margin-bottom: 0.5rem;
+  .film-poster {
+    max-width: 70%;
   }
 
   .film-stills {
-    justify-content: center; /* Centrer stills på mobil */
+    grid-template-columns: 1fr; /* 1 still per linje */
   }
 }
