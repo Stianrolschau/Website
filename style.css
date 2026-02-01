@@ -75,6 +75,13 @@ header, footer {
   justify-content: center;
 }
 
+.film-wrapper {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
 /* === Venstre kolonne (poster + note + links) === */
 .film-left {
   flex: 0 1 450px;     /* kritisk for skalerbarhed */
