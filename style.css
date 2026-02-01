@@ -225,7 +225,6 @@ header, footer {
 
 .film-stills img {
   width: 100%;
-  aspect-ratio: 16 / 9;
   object-fit: cover;
   border-radius: 0.25rem;
 }
