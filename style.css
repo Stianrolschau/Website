@@ -101,7 +101,7 @@ header, footer {
 
 /* Plakat til venstre */
 .film-poster {
-  width: 250px;
+  width: 400px;
   height: auto;
   border-radius: 0.5rem;
   flex-shrink: 0;
