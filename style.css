@@ -141,7 +141,7 @@ header, footer {
 }
 
 .film-stills img {
-  width: 100%;              /* samme bredde som tekstkolonnen */
+  width: 80%;              /* samme bredde som tekstkolonnen */
   height: auto;
   object-fit: cover;
   border-radius: 0.25rem;
