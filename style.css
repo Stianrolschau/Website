@@ -78,7 +78,7 @@ header, footer {
 .film-wrapper {
   display: flex;
   gap: 2rem;
-  flex-wrap: wrap;
+  flex-wrap: nowrap; /* <-- nøgle: ingen wrap på desktop */
   align-items: flex-start;
 }
 
@@ -144,6 +144,12 @@ header, footer {
   .film-work {
     max-width: 100%;
     padding: 1rem;
+  }
+
+    .film-wrapper {
+    flex-direction: column; /* plakat over tekst/stills på mobil */
+    flex-wrap: wrap;        /* tillad wrap på mobil */
+    align-items: center;
   }
 
   .film-item {
