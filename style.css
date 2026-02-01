@@ -108,6 +108,19 @@ header, footer {
   flex-shrink: 0;
 }
 
+    .film-left {
+  display: flex;
+  flex-direction: column; /* plakat over tekst */
+  align-items: center;    /* centrer plakat og tekst */
+  max-width: 500px;       /* samme bredde som plakaten */
+}
+
+.poster-note {
+  font-style: italic;
+  margin-top: 0.5rem;
+  text-align: center; /* eller left hvis du vil */
+}
+
 /* Højre kolonne: tekst + stills */
 .film-details {
   flex: 1;
