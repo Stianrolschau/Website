@@ -75,8 +75,8 @@ header, footer {
 
 /* === Venstre kolonne (poster + note + links) === */
 .film-left {
-  flex: 0 1 420px;     /* kritisk for skalerbarhed */
-  max-width: 420px;
+  flex: 0 1 450px;     /* kritisk for skalerbarhed */
+  max-width: 450px;
 }
 
 .film-poster {
