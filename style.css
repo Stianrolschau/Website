@@ -86,35 +86,35 @@ header, footer {
   margin-bottom: 2rem;
 }
 
+/* --- Hovedlayout: plakat + details --- */
 .film-item {
   display: flex;
   gap: 2rem;
   margin-bottom: 3rem;
-  flex-wrap: wrap; /* gør det responsive på små skærme */
   align-items: flex-start;
+  flex-wrap: wrap; /* responsive under small screens */
   background-color: rgba(255,255,255,0.8);
   border-radius: 0.5rem;
   padding: 1rem;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
+/* Plakat til venstre */
 .film-poster {
-  width: 500px; /* fast bredde til plakat */
+  width: 250px;
   height: auto;
   border-radius: 0.5rem;
   flex-shrink: 0;
 }
 
+/* Højre kolonne: tekst + stills */
 .film-details {
   flex: 1;
   display: flex;
   flex-direction: column;
 }
 
-.film-info h3 {
-  margin-top: 0;
-}
-
+/* Stills ligger under teksten, i højre kolonne */
 .film-stills {
   display: flex;
   gap: 0.5rem;
@@ -122,7 +122,7 @@ header, footer {
 }
 
 .film-stills img {
-  width: 20%; /* 2 stills ved siden af hinanden */
+  width: 50%; /* 2 stills ved siden af hinanden */
   height: auto;
   object-fit: cover;
   border-radius: 0.25rem;
