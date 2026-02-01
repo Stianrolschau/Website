@@ -135,13 +135,13 @@ header, footer {
 /* Stills under teksten */
 .film-stills {
   display: flex;
-  gap: 0.5rem;
+  flex-direction: column;   /* ét still pr. linje */
+  gap: 0.75rem;             /* luft mellem stills */
   margin-top: 1rem;
-  flex-wrap: wrap;    /* Flere stills på små skærme */
 }
 
 .film-stills img {
-  width: calc(50% - 0.25rem);          
+  width: 100%;              /* samme bredde som tekstkolonnen */
   height: auto;
   object-fit: cover;
   border-radius: 0.25rem;
