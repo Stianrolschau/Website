@@ -80,7 +80,7 @@ header, footer {
 /* --- Film Work Sektion --- */
 .film-work {
   padding: 2rem;
-  max-width: 60%;       /* Sektionen fylder maks 60% af skærmen */
+  max-width: 50%;       /* Sektionen fylder maks 60% af skærmen */
   margin: 0 auto;       /* Centrerer horisontalt */
 }
 
@@ -101,7 +101,7 @@ header, footer {
 
 /* Plakat til venstre */
 .film-poster {
-  width: 400px;
+  width: 500px;
   height: auto;
   border-radius: 0.5rem;
   flex-shrink: 0;
@@ -129,7 +129,7 @@ header, footer {
 }
 
 .film-stills img {
-  width: calc(50% - 0.25rem);          
+  width: 100;          
   height: auto;
   object-fit: cover;
   border-radius: 0.25rem;
