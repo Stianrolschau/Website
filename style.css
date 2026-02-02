@@ -64,6 +64,7 @@ header, footer {
   max-width: 60vw;     /* ← max 60% af viewport */
   margin: 0 auto;     /* centrerer */
   padding: 0 1rem;
+  transform: translateX(2vw); /* ← ryk hele blokken lidt mod højre */
 }
 
 /* === Film Item (Hovedlayout) === */
@@ -72,7 +73,6 @@ header, footer {
   gap: 2rem;
   margin-bottom: 3rem;
   align-items: flex-start;
-  justify-content: center; /* ← VIGTIG */
 }
 
 /* === Venstre kolonne (poster + note + links) === */
