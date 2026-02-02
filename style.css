@@ -133,29 +133,19 @@ header, footer {
 
 /* === Mobil layout === */
 @media (max-width: 768px) {
-  .film-work {
-    max-width: 100%;
-    padding: 1rem;
-  }
-
   .film-item {
-    flex-direction: column;  /* plakat over tekst/stills */
+    flex-direction: column;
     align-items: center;
-    flex-wrap: wrap;
   }
 
-  .film-left {
-    max-width: 70%;
-    width: 100%;
-    margin-bottom: 1rem;
-  }
-
+  .film-left,
   .film-details {
-    text-align: center;
     width: 100%;
+    max-width: 90%;
+    text-align: center;
   }
 
   .film-stills {
-    max-width: 70%;
+    width: 100%;
   }
 }
