@@ -72,6 +72,7 @@ header, footer {
   gap: 2rem;
   margin-bottom: 3rem;
   align-items: flex-start;
+  justify-content: center; /* ← VIGTIG */
 }
 
 /* === Venstre kolonne (poster + note + links) === */
