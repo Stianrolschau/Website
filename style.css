@@ -119,16 +119,16 @@ header, footer {
 /* === Stills under teksten === */
 .film-stills {
   display: flex;
-  flex-direction: column;   /* altid under hinanden */
+  flex-direction: column;
   gap: 0.75rem;
   margin-top: 1rem;
-  max-width: 85%; /* mindre end tekstkolonnen, så de ikke fylder fuld bredde */
+  width: 100%;
+  max-width: 750px;   /* ← KRAV OPFYLDT */
 }
 
 .film-stills img {
   width: 100%;
   height: auto;
-  object-fit: cover;
   border-radius: 0.25rem;
 }
 
