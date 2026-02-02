@@ -128,7 +128,7 @@ header, footer {
 }
 
 .film-stills img {
-  width: 100%;
+  width: 90%;
   height: auto;
   border-radius: 0.25rem;
 }
