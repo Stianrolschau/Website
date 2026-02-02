@@ -60,9 +60,10 @@ header, footer {
 
 /* --- Film Work Sektion --- */
 .film-work {
-  max-width: 1100px;   /* fast, kontrolleret bredde */
-  margin: 0 auto;      /* centrerer på skærmen */
-  padding: 0 1rem;     /* lidt luft i siderne */
+  width: 100%;
+  max-width: 60vw;     /* ← max 60% af viewport */
+  margin: 0 auto;     /* centrerer */
+  padding: 0 1rem;
 }
 
 /* === Film Item (Hovedlayout) === */
