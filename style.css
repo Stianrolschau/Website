@@ -60,8 +60,9 @@ header, footer {
 
 /* --- Film Work Sektion --- */
 .film-work {
-  max-width: 60%;
-  margin: 0 auto; /* centrer hele sektionen */
+  max-width: 1100px;   /* fast, kontrolleret bredde */
+  margin: 0 auto;      /* centrerer på skærmen */
+  padding: 0 1rem;     /* lidt luft i siderne */
 }
 
 /* === Film Item (Hovedlayout) === */
@@ -70,15 +71,11 @@ header, footer {
   gap: 2rem;
   margin-bottom: 3rem;
   align-items: flex-start;
-  justify-content: center; /* centrer venstre+højre kolonne */
-  flex-wrap: nowrap; /* gør layout responsivt på små skærme */
-  width: 100%;
 }
 
 /* === Venstre kolonne (poster + note + links) === */
 .film-left {
-  flex: 0 1 40%;     /* kun så bred som nødvendig */
-  max-width: 450px;
+  flex: 0 0 450px;     /* kun så bred som nødvendig */
   display: flex;
   flex-direction: column;
   align-items: center; /* centrer poster + note + links */
@@ -98,8 +95,8 @@ header, footer {
 
 /* === Højre kolonne (tekst + stills) === */
 .film-details {
-  flex: 1 1 50%; /* fylder kun det nødvendige */
-  min-width: 250px;
+  flex: 1;
+  min-width: 0;
   display: flex;
   flex-direction: column;
   text-align: left;
@@ -124,7 +121,7 @@ header, footer {
   flex-direction: column;   /* altid under hinanden */
   gap: 0.75rem;
   margin-top: 1rem;
-  max-width: 90%; /* mindre end tekstkolonnen, så de ikke fylder fuld bredde */
+  max-width: 85%; /* mindre end tekstkolonnen, så de ikke fylder fuld bredde */
 }
 
 .film-stills img {
