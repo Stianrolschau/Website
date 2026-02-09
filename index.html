@@ -21,14 +21,14 @@
 
   <!-- Video -->
   <section class="video-section">
-    <div class="video-wrapper">
-      <iframe
-        title="Vimeo player"
-        src="https://player.vimeo.com/video/1160659256?h=4f5378e705"
-        allow="autoplay; fullscreen; picture-in-picture"
-        allowfullscreen>
-      </iframe>
-    </div>
+<div class="video-wrapper video-overlay" onclick="loadVimeo(this)">
+  <img
+    src="images/video-cover.jpg"
+    alt="Play showreel"
+    class="video-cover"
+  >
+  <div class="play-button">▶</div>
+</div>
 
     <h3 class="work-title">// SELECTED FILM WORK //</h3>
   </section>
@@ -325,6 +325,19 @@
 <footer>
   <p>© 2026 Stian Rolschau</p>
 </footer>
+
+<script>
+function loadVimeo(el) {
+  el.innerHTML = `
+    <iframe
+      src="https://player.vimeo.com/video/1160659256?h=4f5378e705&autoplay=1"
+      frameborder="0"
+      allow="autoplay; fullscreen; picture-in-picture"
+      allowfullscreen>
+    </iframe>
+  `;
+}
+</script>
 
 </body>
 </html>
