@@ -48,6 +48,7 @@ header, footer {
   aspect-ratio: 16 / 9;
   margin-bottom: 2rem;
   position: relative;
+  overflow: hidden;
 }
 
 .video-wrapper iframe {
@@ -163,6 +164,7 @@ header, footer {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  display: block;
 }
 
 .play-button {
