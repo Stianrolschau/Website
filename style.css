@@ -150,4 +150,32 @@ header, footer {
   .film-stills {
     width: 100%;
   }
+
+/* --- Video overlay --- */
+.video-overlay {
+  cursor: pointer;
+  background: black;
+}
+
+.video-cover {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 64px;
+  color: white;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 50%;
+  padding: 18px 28px;
+  pointer-events: none;
+}
+  
 }
